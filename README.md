@@ -2,6 +2,21 @@
 
 A **generic, conversational video-editing skill** for HeyGen [HyperFrames](https://hyperframes.heygen.com). Where `/video-from-script` and `/video-from-asset` build a video start-to-finish from one input, `/video-editor` puts Claude in the **editor's chair** over a video that already exists: you give any free-form command, in any style, and it translates that to a concrete HyperFrames edit, applies it, verifies, and shows the result.
 
+## Install (one-time, per machine)
+
+**Prerequisites:** [Claude Code](https://claude.com/claude-code), [Node.js 22+](https://nodejs.org), and FFmpeg.
+
+Then run these two lines in a terminal:
+
+```bash
+npx skills add heygen-com/hyperframes -g --all -y   # the HyperFrames engine + skills
+npx skills add parasite-z/video-editor -g --all -y  # this editor skill
+```
+
+That's it — `/video-editor` is now available in every Claude Code session. To update later, re-run the second line.
+
+> 🇹🇭 ดูคู่มือภาษาไทยที่ [README.th.md](README.th.md). For non-technical teammates who'd rather double-click than use a terminal, see [`team-installer/`](team-installer/).
+
 ## Use it
 
 In a Claude Code session inside a HyperFrames project (or a folder with one):

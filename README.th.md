@@ -4,6 +4,21 @@
 
 ในขณะที่ `/video-from-script` และ `/video-from-asset` คือการ "สร้างวิดีโอใหม่ตั้งแต่ต้นจนจบ" จากอินพุตเดียว — `/video-editor` จะให้ Claude ทำหน้าที่เป็น **นักตัดต่อที่นั่งอยู่หน้าไทม์ไลน์** กับวิดีโอที่มีอยู่แล้ว คุณสั่งงานด้วยคำพูดแบบไหนก็ได้ แล้วมันจะแปลงคำสั่งนั้นให้เป็นการแก้ไขจริงใน HyperFrames ลงมือแก้ ตรวจสอบ แล้วแสดงผลให้ดู
 
+## ติดตั้ง (ครั้งเดียวต่อเครื่อง)
+
+**ต้องมีก่อน:** [Claude Code](https://claude.com/claude-code), [Node.js 22 ขึ้นไป](https://nodejs.org) และ FFmpeg
+
+จากนั้นรัน 2 บรรทัดนี้ใน terminal:
+
+```bash
+npx skills add heygen-com/hyperframes -g --all -y   # เอนจิน HyperFrames + สกิลที่เกี่ยวข้อง
+npx skills add parasite-z/video-editor -g --all -y  # สกิลตัดต่อตัวนี้
+```
+
+เท่านี้ก็เรียก `/video-editor` ได้ในทุกเซสชันของ Claude Code — ถ้าจะอัปเดตภายหลัง ให้รันบรรทัดที่สองซ้ำ
+
+> สำหรับเพื่อนร่วมทีมที่ไม่ถนัด terminal และอยากแค่ดับเบิลคลิก ดูโฟลเดอร์ [`team-installer/`](team-installer/) และคู่มือ [READ-ME-FIRST.th.md](team-installer/READ-ME-FIRST.th.md)
+
 ## วิธีเรียกใช้
 
 เปิด Claude Code ในโฟลเดอร์โปรเจกต์ HyperFrames (หรือโฟลเดอร์ที่มีโปรเจกต์อยู่) แล้วพิมพ์:
