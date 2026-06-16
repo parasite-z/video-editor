@@ -1,0 +1,103 @@
+==========================================================
+  VIDEO EDITOR  —  Setup (takes ~5 minutes, no coding)
+==========================================================
+
+This adds a "video editor" to Claude Code. Once it's installed, you
+edit videos by just typing what you want in plain English, like:
+
+   "cut the first 2 seconds"
+   "make it vertical for TikTok"
+   "add a title that says New Drop"
+   "show me the preview"
+   "render it"
+
+
+----------------------------------------------------------
+BEFORE YOU START — you need two free apps installed:
+----------------------------------------------------------
+
+  1) Claude Code      (your team should already have this)
+  2) Node.js          https://nodejs.org  ->  click the big "LTS" button
+
+  The installer will check these for you and open the download
+  page if something is missing. Just install what it asks for
+  and run it again.
+
+
+----------------------------------------------------------
+INSTALL ON A MAC
+----------------------------------------------------------
+
+  FIRST: unzip this folder (don't run from inside the .zip).
+
+  Try this:
+     Double-click  ->  Install-Mac.command
+
+  If it WON'T open, opens in TextEdit, or says
+  "unidentified developer" / "cannot be opened":
+
+     This is normal for downloaded files. Use this method instead
+     (it always works):
+
+     1. Press  Cmd + Space , type  Terminal , press Enter.
+        (This opens the black "Terminal" window.)
+
+     2. In that window type the word   bash   and then a SPACE.
+        Do NOT press Enter yet.   ->   bash
+
+     3. Drag the file  Install-Mac.command  from Finder and DROP it
+        onto the Terminal window. The file path fills in by itself.
+
+     4. Press Enter.
+
+  Then follow the messages. When it says "Done!", you're finished.
+
+
+----------------------------------------------------------
+INSTALL ON WINDOWS
+----------------------------------------------------------
+
+  FIRST: unzip this folder (don't run from inside the .zip).
+
+  1. Double-click:  Install-Windows.bat
+  2. If Windows shows a blue "Windows protected your PC" box:
+        Click "More info" -> "Run anyway".
+  3. Follow the messages. When it says "Done!", press a key to close.
+
+
+----------------------------------------------------------
+HOW TO USE IT (after installing)
+----------------------------------------------------------
+
+  1. Open Claude Code.
+
+  2. Create a video project to work on (only needed the first
+     time, or whenever you start a new video). Type this:
+
+        npx hyperframes init my-video --example blank --non-interactive
+
+  3. Open that "my-video" folder in Claude Code, then type:
+
+        /video-editor
+
+     ...and start giving instructions in your own words:
+
+        add a title that says Welcome
+        make the intro shorter
+        add a voiceover that says "Here's what's new"
+        make it vertical for TikTok
+        show me the preview
+        render it
+
+
+----------------------------------------------------------
+TROUBLE?
+----------------------------------------------------------
+  - Re-run the installer — it's safe to run more than once.
+  - Make sure you UNZIPPED this folder first.
+  - On Mac, use the "drag into Terminal" method above if double-
+    click is blocked.
+  - Need FFmpeg for previewing/rendering — the installer tells
+    you how if it's missing.
+  - Still stuck? Send a screenshot of the installer window to
+    whoever shared this with you.
